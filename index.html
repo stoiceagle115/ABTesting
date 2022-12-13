@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Parts of this code (sepcifically the nav bar and observations section) is based on Jeff Huang's Bootstrap Presentation-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>A/B Testing and Eyetracking</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">A/B Testing and Eyetracking</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="navbar-item"><a href="#interface" class="nav-link">Layouts</a></li>
+                    <li class="navbar-item"><a href="#observations" class="nav-link">Observations</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<!-- Remove justify content later-->
+<div class="d-flex flex-column backdrop justify-content-center align-items center">
+    <!-- <img src="" alt="description"-->
+    <!-- <h1 class="text-light">-->
+    <!-- btn = button-->
+    <h1 class="text-light display-1">A/B Testing and Eyetracking</h1>
+    <h2 class="text-light h6">Evaluating different UI designs and user responses</h2>
+</div>
+
+<div id="about" class="bg-dark">
+    <h4 class="text-light text-center">About</h4>
+    <p class="text-light text-center"> This goal of this project was to compare different UI designs for the same
+        website. These designs were tested on different users using an eye tracking software. The data collected from
+        those tests could be used to qualitatively compare our UI designs.</p>
+
+    <div class="text-light text-center">
+        <p></p>
+        <br>
+    </div>
+</div>
+
+<div id="interface" class="container-fluid">
+    <h4> Layouts </h4>
+    <p class="text-dark"> We created two different UI designs with completely opposite design philosophies.
+        <br>The first soley focused on long vertical and horizontal shapes, while the second focused on more uniform and
+        box-like shapes.
+    </p>
+    <div class="row">
+        <div class="col text-light text-center">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FzmAH6nHKBWBlZZgGsRhDqv%2FBakery-Redesigns%3Fnode-id%3D0%253A1%26t%3DYbXQgoP1H6luSEh0-1"
+                allowfullscreen></iframe>
+            <h5 class="text-dark">First Design (Vertical Nav Bar)</h5>
+            <p class="text-dark">If you cannot see the design use this:
+                <a
+                    href="https://www.figma.com/file/zmAH6nHKBWBlZZgGsRhDqv/Bakery-Redesigns?node-id=0%3A1&t=YbXQgoP1H6luSEh0-1">link</a>
+            </p>
+        </div>
+        <div class="col text-light text-center">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Feat1hYiM04HkMug3xwdD76%2FEye-Tracking%3Fnode-id%3D0%253A1%26t%3D1qBaZrguzKWIF10U-1"
+                allowfullscreen></iframe>
+            <h5 class="text-dark">Second Design (Horizontal Nav Bar)</h5>
+            <p class="text-dark">If you cannot see the design use this:
+                <a
+                    href="https://www.figma.com/file/eat1hYiM04HkMug3xwdD76/Eye-Tracking?node-id=0%3A1&t=1qBaZrguzKWIF10U-1">link</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div id="observations" class="bg-dark">
+    <h4 class="text-light text-center">Observations</h4>
+    <p class="text-light text-center"> We tested two users on our UI designs.
+        <br>An eyetracking software was used to collect data from these test. Some of the results can be seen below.
+    </p>
+    <div class="row px-md-3 px-lg-5 pt-3 justify-content-center">
+        <div class="col-md-6 col-xl-5 col-xxl-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Key Observations</h3>
+                </div>
+                <div class="card-body lead">
+                    <p class="card-text"> - Two out of the three users were able to use the interface without the need
+                        of outside assistance
+                        <br> - Most of the users took a similar amount of time (around 2 min 35 sec) to finish using the
+                        interface
+                        <br> - The help button on the interface seemed to do nothing when one of the users pressed it,
+                        and the user had to physically go and ask a worker for help
+                        <br> - All users were immediately able to understand how to use the interfaces' scanner.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-xl-5 col-xxl-4 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h3>Questions</h3>
+                </div>
+                <div class="card-body lead">
+                    <ul>
+                        <li>1. What was the first thing that your eyes were drawn to when you saw the interface?</li>
+                        <li>2. Are there any features of a checkout with a store clerk that you would want the
+                            self-service kiosk to include?</li>
+                        <li>3. Did it take longer, shorter or the the expected amount of time to use?</li>
+                        <li>4. Was there anything about the interface which caused you great frustration?</li>
+                        <li>5. Were the phsyical and digital aspects of the interface well-integrated?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="text-light text-center">Results</h4>
+    <div class="container-fluid">
+        <p class="text-light text-center"> Our results did not quite match our expectations for the horizontal layout
+            because we were
+            thinking that if everything is displayed on one screen that the user would have looked at several items.
+            Instead, it seems like they really only looked at one or two items. For our vertical nav bar design, the
+            results
+            were also a little concerning because it seemed that the viewer did not pay much attention to the “cakes”
+            and
+            “hot drinks” collapsible drop downs. However, this may have been because they knew these components weren’t
+            actually interactive, and viewers clearly looked at all of the food items on the screen, so our hypothesis
+            that
+            a collapsible drop downs would decrease clutter and focus the user was supported.
+            <br>
+            <br>
+        </p>
+    </div>
+</div>
+
+
+</html>
